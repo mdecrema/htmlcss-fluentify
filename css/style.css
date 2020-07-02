@@ -6,7 +6,7 @@
 
 .pagina {
     width: 80%;
-    background-color: aquamarine;
+    background-color: transparent;
     margin: auto;
     font-family:  'Lato', sans-serif;
 }
@@ -120,6 +120,18 @@ h1 {
     color: grey;
 }
 
+.sezioni {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.sezioni::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
 .col-left {
     width: 250px;
     display: inline-block;
@@ -130,6 +142,8 @@ h1 {
 .col-cent {
     width: 250px;
     display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
     float: left;
     overflow: hidden;
 }
@@ -139,4 +153,78 @@ h1 {
     display: inline-block;
     float: left;
     overflow: hidden;
+}
+
+.img-sezione {
+    width: 200px;
+    height: 200px;
+}
+
+.col-left .img-sezione {
+    background-image: url(../img/profile.svg);
+    background-size: cover;
+}
+
+.col-cent .img-sezione {
+    background-image: url(../img/computer.svg);
+    background-size: cover;
+}
+
+.col-right .img-sezione {
+    background-image: url(../img/doc.svg);
+    background-size: cover;
+}
+
+.testo-profilo, .testo-computer, .testo-doc {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.testo-profilo p, .testo-computer p, .testo-doc p {
+    margin-top: 50px;
+}
+
+.sezioni h2 {
+    color: greenyellow;
+}
+
+.test-inglese {
+    width: 80%;
+    height: 300px;
+    margin: 80px auto 150px;
+}
+
+#left {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+#right {
+    width: 40%;
+    display: inline-block;
+    float: left; 
+    margin-left: 50px;
+}
+
+#right p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+#right h4 {
+    margin-top: 20px;
+}
+
+.offerta-formativa {
+    width: 100%;
+    height: 150px;
+    background-color: lightgray;
+}
+
+.offerta-formativa h2 {
+    line-height: 150px;
+    margin-left: 100px;
 }
